@@ -1,0 +1,62 @@
+.logo {
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  padding: 25px 93px 25px 0px;
+
+
+&__web {
+  font-family: Raleway;
+  color: $highlight-color;
+  font-size: 26px;
+  font-style: bold;
+  text-decoration: none;
+  line-height: 1.19;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  transition-property: color;
+}
+
+&__studio-black {
+  font-family: Raleway;
+  color: #000000;
+  text-decoration: none;
+  line-height: 1.19;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  transition-property: color;
+}
+
+&__studio-black:hover,
+&__studio-black:focus,
+&__web:focus,
+&__web:hover {
+  color: $highlight-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&__studio-white {
+  font-family: Raleway;
+  color: #ffffff;
+  font-size: 26px;
+  font-style: bold;
+  text-decoration: none;
+  line-height: 1.19;
+  font-style: normal;
+  font-weight: 700;
+  transition-property: color;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+&__studio-white:hover,
+&__studio-white:focus {
+  color: $highlight-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+}

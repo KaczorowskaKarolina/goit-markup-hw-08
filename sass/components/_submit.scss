@@ -1,0 +1,74 @@
+.submit {
+  display: flex;
+  color: #ffffff;
+  letter-spacing: 0.03em;
+  line-height: 1.14;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 0px 20px 77px;
+  margin: 0px;
+
+
+&__form {
+  display: flex;
+  justify-content: space-around;
+}
+
+&__input {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  border-color: rgba(255, 255, 255, 0.3);
+  background-color: #2f303a;
+  color: $highlight-color;
+  margin-left: 77px;
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 1.25;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  transition-property: color, border-color;
+}
+
+&__input:focus,
+&__input:hover {
+  border-color: $highlight-color;
+  color: $highlight-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&__button {
+  position: relative;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-left: 12px;
+  border: none;
+  fill: #ffffff;
+  padding: 10px 12px 10px 42px;
+  display: flex;
+  justify-content: space-between;
+  transition-property: fill, color, background-color;
+}
+
+&__icon {
+  padding-right: 16px;
+  padding-left: 24px;
+}
+
+&__button:focus,
+&__button:hover {
+  color: $secondary-color;
+  fill: $secondary-color;
+  background: $highlight-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+}

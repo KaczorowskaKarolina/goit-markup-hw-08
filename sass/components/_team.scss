@@ -1,0 +1,51 @@
+.team {
+  background-color: #f5f4fa;
+
+
+&__item {
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: #ffffff;
+  padding: 0px;
+  gap: 30px;
+}
+
+&__item &__name {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 0px;
+  margin: 0px;
+}
+
+&__item &__position {
+  text-align: center;
+  padding-top: 10px;
+  margin: 0px;
+}
+}
+
+.icon__container {
+  margin: 16px 0px 30px 0px;
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+}
+
+.icon__social-media {
+  fill: #afb1b8;
+  padding: 14px;
+  display: flex;
+  border-radius: 50%;
+  transition-property: fill, background-color;
+
+
+&:focus,
+&:hover {
+  background-color: $highlight-color;
+  fill: #ffffff;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+}

@@ -1,0 +1,27 @@
+.project {
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__img-with-title {
+    position: relative;
+    margin: 0px;
+    display: flex;
+  }
+
+  &__img-title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: rgba(47, 48, 58, 0.8);
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    bottom: 0;
+    padding: 27px;
+    margin: 0;
+  }
+}

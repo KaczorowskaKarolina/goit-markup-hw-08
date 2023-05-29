@@ -1,0 +1,36 @@
+.join-us {
+  color: #ffffff;
+  letter-spacing: 0.03em;
+  line-height: 1.14;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 0px 20px 70px;
+  margin: 0px;
+
+
+&__container {
+  margin-left: 70px;
+  justify-content: space-evenly;
+  gap: 10px;
+  display: flex;
+}
+
+&__icon {
+  fill: #afb1b8;
+  background-color: #ffffff1a;
+  padding: 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  transition-property: fill, background-color;
+}
+
+&__icon:focus,
+&__icon:hover {
+  background-color: $highlight-color;
+  fill: #ffffff;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+}

@@ -1,0 +1,23 @@
+.main_box {
+  background-color: #2f303a;
+  background-image: url('../images/img10.jpg'), url('../images/img10overlay.jpg'),
+    linear-gradient(to right, #2f303a 40%, transparent);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 280px;
+  margin: 0px;
+
+
+&__title {
+  letter-spacing: 0.06em;
+  line-height: 1.36;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+}
+}
+

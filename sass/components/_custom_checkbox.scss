@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  border: 0;
+}
+
+.checkbox {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+
+
+&__control {
+  position: relative;
+  margin-right: 7px;
+  width: 16px;
+  height: 15px;
+  margin-top: 13px;
+}
+
+&__input {
+  display: flex;
+  margin: 0px;
+}
+
+&__icon {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  fill: transparent;
+  transition-property: fill, background-color, color;
+  width: 100%;
+  background-color: #ffffff;
+  border: 2px solid $main-color;
+  box-sizing: border-box;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+&__icon:hover {
+  border-color: none;
+  background: $highlight-color;
+  fill: #ffffff;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&__icon::after {
+  content: '';
+  position: absolute;
+  display: block;
+}
+
+&__input:checked + &__icon {
+  display: block;
+  border-color: $highlight-color;
+  background-color: $highlight-color;
+  fill: #ffffff;
+}
+
+&__input:checked + &__icon::after {
+  border-color: #ffffff;
+}
+}

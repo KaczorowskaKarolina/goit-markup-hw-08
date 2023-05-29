@@ -1,0 +1,44 @@
+.footer {
+  background-color: #2f303a;
+  color: #ffffff;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+
+&__address {
+  color: #ffffff;
+  text-decoration: none;
+  font-style: normal;
+  letter-spacing: 1px;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  line-height: 1.71;
+  transition-property: color;
+  margin-top: 20px;
+}
+
+&__contact {
+  color: $secondary-color;
+  font-style: normal;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  line-height: 1.71;
+  text-decoration: none;
+}
+
+
+&__address:hover,
+&__address:focus,
+&__contact:hover,
+&__contact:focus {
+  color: $highlight-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+}
+
+.footer .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: inline-flex;
+}
