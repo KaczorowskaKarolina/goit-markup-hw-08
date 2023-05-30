@@ -8,8 +8,16 @@ body {
 
 .container {
   padding: 0 15px;
-  max-width: 1200px;
+  max-width: 480px;
+  width: 100%;
   margin: 0 auto;
+
+  @include tablet {
+    max-width: 768px;
+  }
+  @include desktop {
+    max-width: 1200px;
+  }
 }
 
 .section {
@@ -17,26 +25,26 @@ body {
   padding-bottom: 94px;
 }
 
-.section__title {
-  text-align: center;
-  letter-spacing: 0.03em;
-  line-height: 1.16;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  justify-items: center;
-  margin-bottom: 50px;
-  margin-top: 0px;
-}
+// .section__title {
+//   text-align: center;
+//   letter-spacing: 0.03em;
+//   line-height: 1.16;
+//   font-style: normal;
+//   font-weight: 700;
+//   font-size: 36px;
+//   justify-items: center;
+//   margin-bottom: 50px;
+//   margin-top: 0px;
+// }
 
-.section__box {
-  display: flex;
-  gap: 30px;
-  margin: 0px auto;
-  list-style: none;
-  justify-content: left;
-  max-width: 1200px;
-}
+// .section__box {
+//   display: flex;
+//   gap: 30px;
+//   margin: 0px auto;
+//   list-style: none;
+//   justify-content: left;
+//   max-width: 1200px;
+// }
 
 .button {
   background-color: $highlight-color;
@@ -101,4 +109,3 @@ textarea {
   padding: 12px 16px;
   box-sizing: border-box;
 }
-
