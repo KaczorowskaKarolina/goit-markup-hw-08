@@ -5,6 +5,14 @@
   letter-spacing: 0.03em;
   padding: 25px 93px 25px 0px;
 
+      @include tablet {
+
+  }
+
+  @include desktop {
+    
+  }
+
 
 &__web {
   font-family: Raleway;
@@ -17,6 +25,14 @@
   font-weight: 700;
   font-size: 26px;
   transition-property: color;
+
+      @include tablet {
+
+  }
+
+  @include desktop {
+    
+  }
 }
 
 &__studio-black {
@@ -28,6 +44,14 @@
   font-weight: 700;
   font-size: 26px;
   transition-property: color;
+
+      @include tablet {
+
+  }
+
+  @include desktop {
+    
+  }
 }
 
 &__studio-black:hover,
@@ -37,6 +61,14 @@
   color: $highlight-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+      @include tablet {
+
+  }
+
+  @include desktop {
+    
+  }
 }
 
 &__studio-white {
@@ -51,6 +83,14 @@
   transition-property: color;
   padding-top: 60px;
   padding-bottom: 20px;
+
+      @include tablet {
+
+  }
+
+  @include desktop {
+    
+  }
 }
 
 &__studio-white:hover,
@@ -58,5 +98,13 @@
   color: $highlight-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+      @include tablet {
+
+  }
+
+  @include desktop {
+    
+  }
 }
 }

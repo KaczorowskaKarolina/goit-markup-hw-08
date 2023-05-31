@@ -5,6 +5,14 @@
   display: flex;
   justify-content: center;
 
+      @include tablet {
+
+  }
+
+  @include desktop {
+    
+  }
+
 &__address {
   color: #ffffff;
   text-decoration: none;
@@ -15,6 +23,14 @@
   line-height: 1.71;
   transition-property: color;
   margin-top: 20px;
+
+      @include tablet {
+
+  }
+
+  @include desktop {
+    
+  }
 }
 
 &__contact {
@@ -24,6 +40,14 @@
   letter-spacing: 0.03em;
   line-height: 1.71;
   text-decoration: none;
+
+      @include tablet {
+
+  }
+
+  @include desktop {
+    
+  }
 }
 
 
@@ -34,6 +58,14 @@
   color: $highlight-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+      @include tablet {
+
+  }
+
+  @include desktop {
+    
+  }
 }
 }
 
@@ -41,4 +73,12 @@
   padding-top: 60px;
   padding-bottom: 60px;
   display: inline-flex;
+
+      @include tablet {
+
+  }
+
+  @include desktop {
+    
+  }
 }

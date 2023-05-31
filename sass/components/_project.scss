@@ -3,10 +3,22 @@
   margin-left: auto;
   margin-right: auto;
 
+  @include tablet {
+  }
+
+  @include desktop {
+  }
+
   &__img-with-title {
     position: relative;
     margin: 0px;
     display: flex;
+
+    @include tablet {
+    }
+
+    @include desktop {
+    }
   }
 
   &__img-title {
@@ -23,31 +35,55 @@
     bottom: 0;
     padding: 27px;
     margin: 0;
+
+    @include tablet {
+    }
+
+    @include desktop {
+    }
   }
 }
 
 .what-do {
+  display: none;
+  @include tablet {
+  }
+
+  @include desktop {
+    display: block;
+  }
+
 
   &__title {
-  text-align: center;
-  letter-spacing: 0.03em;
-  line-height: 1.16;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  justify-items: center;
-  margin-bottom: 50px;
-  margin-top: 0px;
-  display: none;
-}
+    text-align: center;
+    letter-spacing: 0.03em;
+    line-height: 1.16;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    justify-items: center;
+    margin-bottom: 50px;
+    margin-top: 0px;
 
-&__box {
-  display: flex;
-  gap: 30px;
-  margin: 0px auto;
-  list-style: none;
-  justify-content: left;
-  max-width: 1200px;
-  display: none;
-}
+    @include tablet {
+    }
+
+    @include desktop {
+    }
+  }
+
+  &__box {
+    display: flex;
+    gap: 30px;
+    margin: 0px auto;
+    list-style: none;
+    justify-content: left;
+    max-width: 1200px;
+
+    @include tablet {
+    }
+
+    @include desktop {
+    }
+  }
 }

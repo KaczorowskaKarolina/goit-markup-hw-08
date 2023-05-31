@@ -8,16 +8,40 @@
   height: 100%;
   transition: visibility 0.6s linear, opacity 0.6s linear;
   background-color: rgba(0, 0, 0, 0.2);
+
+      @include tablet {
+
+  }
+
+  @include desktop {
+    
+  }
 }
 
 .is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
+
+      @include tablet {
+
+  }
+
+  @include desktop {
+    
+  }
 }
 
 .is-hidden {
   pointer-events: none;
   visibility: hidden;
   opacity: 0;
+
+      @include tablet {
+
+  }
+
+  @include desktop {
+    
+  }
 }
 
 .modal {
@@ -34,6 +58,14 @@
   border-radius: 4px;
   padding: 40px;
   box-sizing: border-box;
+
+      @include tablet {
+
+  }
+
+  @include desktop {
+    
+  }
 
 
 &__close-button {
@@ -52,6 +84,14 @@
   box-sizing: border-box;
   width: 30px;
   height: 30px;
+
+      @include tablet {
+
+  }
+
+  @include desktop {
+    
+  }
 }
 
 &__close-button:hover,
@@ -62,6 +102,14 @@
   fill: #ffffff;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+      @include tablet {
+
+  }
+
+  @include desktop {
+    
+  }
 }
 
 &__header {
@@ -72,5 +120,13 @@
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 2px;
+
+      @include tablet {
+
+  }
+
+  @include desktop {
+    
+  }
 }
 }

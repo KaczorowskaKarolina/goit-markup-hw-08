@@ -1,20 +1,52 @@
 .header-navigation {
   display: flex;
   margin: 0px;
+
+      @include tablet {
+
+  }
+
+  @include desktop {
+    
+  }
 }
 
 .header .container {
   display: flex;
   justify-content: space-between;
+
+      @include tablet {
+
+  }
+
+  @include desktop {
+    
+  }
 }
 
 .header {
   border-bottom: 1px solid #ececec;
+
+      @include tablet {
+
+  }
+
+  @include desktop {
+    
+  }
 }
 
 .header-contact {
   display: flex;
   margin: 0px;
+
+      @include tablet {
+
+  }
+
+  @include desktop {
+    
+  }
 
   &__link {
     color: $secondary-color;
@@ -28,12 +60,28 @@
     padding: 0px 10px 0px 50px;
     align-items: center;
     transition-property: color;
+
+        @include tablet {
+
+  }
+
+  @include desktop {
+    
+  }
   }
 
   .header-navigation &__link {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+        @include tablet {
+
+  }
+
+  @include desktop {
+    
+  }
   }
 
   &__link:focus,
@@ -41,6 +89,14 @@
     color: $highlight-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        @include tablet {
+
+  }
+
+  @include desktop {
+    
+  }
   }
 
   &__link:focus,
@@ -48,22 +104,54 @@
     fill: $highlight-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        @include tablet {
+
+  }
+
+  @include desktop {
+    
+  }
   }
 
   &__icon-mailto {
     fill: $secondary-color;
     padding: 34px 10px 34px 0px;
+
+        @include tablet {
+
+  }
+
+  @include desktop {
+    
+  }
   }
 
   &__icon-smartphone {
     fill: $secondary-color;
     padding: 33px 10px 31px 0px;
+
+        @include tablet {
+
+  }
+
+  @include desktop {
+    
+  }
   }
 }
 
 .menu {
   display: flex;
   margin: 0px;
+
+      @include tablet {
+
+  }
+
+  @include desktop {
+    
+  }
 
   &__link-nav {
     color: $main-color;
@@ -76,6 +164,14 @@
     display: flex;
     margin: 32px 46px 32px 0px;
     transition-property: color;
+
+        @include tablet {
+
+  }
+
+  @include desktop {
+    
+  }
   }
 
   &__link-nav:hover,
@@ -83,10 +179,26 @@
     color: $highlight-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        @include tablet {
+
+  }
+
+  @include desktop {
+    
+  }
   }
 
   &__is-on {
     position: relative;
+
+        @include tablet {
+
+  }
+
+  @include desktop {
+    
+  }
   }
 
   &__is-on::after {
@@ -97,5 +209,13 @@
     width: 100%;
     height: 4px;
     margin-top: 46px;
+
+        @include tablet {
+
+  }
+
+  @include desktop {
+    
+  }
   }
 }

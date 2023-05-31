@@ -12,6 +12,14 @@
   width: 100%;
   margin-bottom: 30px;
 
+      @include tablet {
+
+  }
+
+  @include desktop {
+    
+  }
+
 
 &__control {
   position: relative;
@@ -19,11 +27,27 @@
   width: 16px;
   height: 15px;
   margin-top: 13px;
+
+      @include tablet {
+
+  }
+
+  @include desktop {
+    
+  }
 }
 
 &__input {
   display: flex;
   margin: 0px;
+
+      @include tablet {
+
+  }
+
+  @include desktop {
+    
+  }
 }
 
 &__icon {
@@ -42,6 +66,14 @@
   box-sizing: border-box;
   border-radius: 2px;
   cursor: pointer;
+
+      @include tablet {
+
+  }
+
+  @include desktop {
+    
+  }
 }
 
 &__icon:hover {
@@ -50,12 +82,28 @@
   fill: #ffffff;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+      @include tablet {
+
+  }
+
+  @include desktop {
+    
+  }
 }
 
 &__icon::after {
   content: '';
   position: absolute;
   display: block;
+
+      @include tablet {
+
+  }
+
+  @include desktop {
+    
+  }
 }
 
 &__input:checked + &__icon {
@@ -63,9 +111,25 @@
   border-color: $highlight-color;
   background-color: $highlight-color;
   fill: #ffffff;
+
+      @include tablet {
+
+  }
+
+  @include desktop {
+    
+  }
 }
 
 &__input:checked + &__icon::after {
   border-color: #ffffff;
+
+      @include tablet {
+
+  }
+
+  @include desktop {
+    
+  }
 }
 }

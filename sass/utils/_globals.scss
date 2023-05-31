@@ -16,35 +16,72 @@ body {
     max-width: 768px;
   }
   @include desktop {
+    padding: 0 15px;
     max-width: 1200px;
+    margin: 0 auto;
   }
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include tablet {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
-// .section__title {
-//   text-align: center;
-//   letter-spacing: 0.03em;
-//   line-height: 1.16;
-//   font-style: normal;
-//   font-weight: 700;
-//   font-size: 36px;
-//   justify-items: center;
-//   margin-bottom: 50px;
-//   margin-top: 0px;
-// }
+.section__title {
+  text-align: center;
+  letter-spacing: 0.03em;
+  line-height: 1.18;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  justify-items: center;
+  margin-bottom: 30px;
+  margin-top: 0px;
 
-// .section__box {
-//   display: flex;
-//   gap: 30px;
-//   margin: 0px auto;
-//   list-style: none;
-//   justify-content: left;
-//   max-width: 1200px;
-// }
+  @include tablet {
+    font-size: 28px;
+  }
+
+  @include desktop {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+}
+
+.section__box {
+  display: flex;
+  gap: 30px;
+  margin: 0px auto;
+  list-style: none;
+  justify-content: center;
+  max-width: 100%;
+  flex-direction: column;
+
+  @include tablet {
+    display: flex;
+    gap: 30px;
+    margin: 0px auto;
+    list-style: none;
+    justify-content: left;
+  }
+
+  @include desktop {
+    display: flex;
+    gap: 30px;
+    margin: 0px auto;
+    list-style: none;
+    justify-content: left;
+    max-width: 1200px;
+  }
+}
 
 .button {
   background-color: $highlight-color;
@@ -61,6 +98,12 @@ body {
   border-style: none;
   padding: 10px 41px 10px 42px;
   transition-property: color, background-color;
+
+  @include tablet {
+  }
+
+  @include desktop {
+  }
 }
 
 .button:hover,
@@ -68,24 +111,48 @@ body {
   color: $secondary-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @include tablet {
+  }
+
+  @include desktop {
+  }
 }
 
 ul {
   list-style-type: none;
   padding: 0px;
   margin-top: 20px;
+
+  @include tablet {
+  }
+
+  @include desktop {
+  }
 }
 
 input {
   box-sizing: border-box;
   width: 100%;
   padding: 12px 1px 12px 42px;
+
+  @include tablet {
+  }
+
+  @include desktop {
+  }
 }
 
 input,
 textarea {
   border: none;
   outline: none;
+
+  @include tablet {
+  }
+
+  @include desktop {
+  }
 }
 
 input:hover,
@@ -93,6 +160,12 @@ input:focus,
 textarea:hover,
 textarea:focus {
   outline: none;
+
+  @include tablet {
+  }
+
+  @include desktop {
+  }
 }
 
 textarea {
@@ -108,4 +181,10 @@ textarea {
   border-radius: 4px;
   padding: 12px 16px;
   box-sizing: border-box;
+
+  @include tablet {
+  }
+
+  @include desktop {
+  }
 }
