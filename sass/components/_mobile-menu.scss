@@ -1,0 +1,141 @@
+.menu-toggle {
+    background: none;
+    border: none;
+}
+
+@media screen and (max-width: $phone-end) {
+
+    .menu,
+    .header-contact {
+        display: none;
+    }
+}
+
+@media screen and (min-width: $tablet-start) {
+    .menu-toggle {
+        display: none;
+    }
+}
+
+.hamburger {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100vw;
+    height: 90vh;
+    background-color: white;
+    transform: translateX(-100%);
+    transition: transform 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &.is-open {
+        transform: translateX(0);
+    }
+
+    & .menu-toggle {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+    }
+
+    &__icon {
+        fill: #212121;
+        cursor: pointer;
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__icon:hover {
+        fill: getColor('secondary');
+    }
+
+    &__icon--close {
+        transition-property: transform;
+        transition-duration: 1000ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__content {
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: white;
+        padding-top: 48px;
+        padding-bottom: 48px;
+        padding-left: 40px;
+        overflow-y: auto;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    &__link {
+        
+        font-weight: 500;
+        font-size: 40px;
+        
+        color: #212121;
+    }
+
+    &__link:hover {
+        color: #2196f3;
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__tel {
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
+    &__tel--link {
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 40px;
+        letter-spacing: 0.02em;
+        color: #2196f3;
+    }
+
+    &__mail {
+        margin-bottom: 64px;
+    }
+
+    &__mail--link {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+        color: silver;
+    }
+
+    &__socials {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    &__socials--item {
+        border-right: 1px solid rgba(33, 33, 33, .2);
+        padding-right: 10px;
+    }
+
+    &__socials--item:last-child {
+        border: none;
+    }
+
+    &__socials--link {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+        color: #2196f3;
+    }
+}

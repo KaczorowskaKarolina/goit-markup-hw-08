@@ -1,35 +1,17 @@
 .clients {
-  // justify-content: space-evenly;
-  // gap: 30px;
-  // display: flex;
-
-      @include tablet {
-
-  }
-
-  @include desktop {
-    justify-content: space-evenly;
   gap: 30px;
   display: flex;
-  }
-
-
-&__icon {
-  // border: 1px solid;
-  // border-color: #afb1b8;
-  // border-radius: 4px;
-  // width: 170px;
-  // height: 92px;
-  // fill: #afb1b8;
-  // cursor: pointer;
-  // transition-property: fill, border-color;
-
-      @include tablet {
-
-  }
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 
   @include desktop {
-      border: 1px solid;
+    flex-wrap: nowrap;
+    flex-basis: auto;
+  }
+
+&__icon {
+  border: 1px solid;
   border-color: #afb1b8;
   border-radius: 4px;
   width: 170px;
@@ -37,25 +19,13 @@
   fill: #afb1b8;
   cursor: pointer;
   transition-property: fill, border-color;
-  }
 }
 
 &__icon:focus,
 &__icon:hover {
-  // fill: $highlight-color;
-  // border-color: $highlight-color;
-  // transition-duration: 250ms;
-  // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-      @include tablet {
-
-  }
-
-  @include desktop {
-      fill: $highlight-color;
+  fill: $highlight-color;
   border-color: $highlight-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
 }
 }

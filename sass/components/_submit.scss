@@ -1,5 +1,5 @@
 .submit {
-  display: flex;
+ 
   color: #ffffff;
   letter-spacing: 0.03em;
   line-height: 1.14;
@@ -9,26 +9,18 @@
   padding: 10px 0px 20px 77px;
   margin: 0px;
 
-       @include tablet {
-
-  }
-
-  @include desktop {
-    
-  }
-
 
 &__form {
+ 
+
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
 
-       @include tablet {
-
-  }
-
-  @include desktop {
-    
-  }
+          @include desktop {
+            flex-direction: row;
+        }
 }
 
 &__input {
@@ -38,8 +30,8 @@
   border-color: rgba(255, 255, 255, 0.3);
   background-color: #2f303a;
   color: $highlight-color;
-  margin-left: 77px;
-  width: 358px;
+  // margin-left: 77px;
+  width: 340px;
   height: 50px;
   padding-left: 16px;
   font-family: Roboto;
@@ -52,12 +44,8 @@
   border-radius: 4px;
   transition-property: color, border-color;
 
-       @include tablet {
-
-  }
-
-  @include desktop {
-    
+  @include tablet {
+    width: 450px;
   }
 }
 
@@ -67,14 +55,6 @@
   color: $highlight-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-       @include tablet {
-
-  }
-
-  @include desktop {
-    
-  }
 }
 
 &__button {
@@ -88,27 +68,11 @@
   display: flex;
   justify-content: space-between;
   transition-property: fill, color, background-color;
-
-       @include tablet {
-
-  }
-
-  @include desktop {
-    
-  }
 }
 
 &__icon {
   padding-right: 16px;
   padding-left: 24px;
-
-       @include tablet {
-
-  }
-
-  @include desktop {
-    
-  }
 }
 
 &__button:focus,
@@ -118,13 +82,5 @@
   background: $highlight-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-       @include tablet {
-
-  }
-
-  @include desktop {
-    
-  }
 }
 }

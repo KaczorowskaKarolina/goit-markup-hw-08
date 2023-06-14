@@ -2,16 +2,18 @@
   background-color: #2f303a;
   color: #ffffff;
   text-decoration: none;
-  display: flex;
-  justify-content: center;
+ 
+  &__display{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
 
-      @include tablet {
-
-  }
-
-  @include desktop {
-    
-  }
+        @include desktop {
+            text-align: left;
+            flex-direction: row;
+        }
+}
 
 &__address {
   color: #ffffff;
@@ -23,14 +25,6 @@
   line-height: 1.71;
   transition-property: color;
   margin-top: 20px;
-
-      @include tablet {
-
-  }
-
-  @include desktop {
-    
-  }
 }
 
 &__contact {
@@ -40,14 +34,6 @@
   letter-spacing: 0.03em;
   line-height: 1.71;
   text-decoration: none;
-
-      @include tablet {
-
-  }
-
-  @include desktop {
-    
-  }
 }
 
 
@@ -58,27 +44,36 @@
   color: $highlight-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-      @include tablet {
+&__contacts {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
 
-  }
+        @include tablet {
+            flex-direction: row;
+        }
+
+        @include desktop {
+            flex-direction: row;
+        }
+    }
+
+&__newsletter {
+  margin-top: 60px;
 
   @include desktop {
-    
+    margin-top: 12px;
+    margin-left: 78px;
   }
+
 }
+
 }
 
 .footer .container {
   padding-top: 60px;
   padding-bottom: 60px;
-  display: inline-flex;
 
-      @include tablet {
-
-  }
-
-  @include desktop {
-    
-  }
 }

@@ -41,34 +41,72 @@
           <li>
             <a class="header-contact__link" href="mailto:info@devstudio.com">
               <svg class="header-contact__icon-mailto" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope-1"></use></svg
-              >info@devstudio.com</a
+                <use href="./images/icons.svg#icon-envelope-1"></use></svg>info@devstudio.com</a
             >
           </li>
           <li>
             <a class="header-contact__link" href="tel:+48111111111">
               <svg class="header-contact__icon-smartphone" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone-1"></use></svg
-              >+48 111 111 111</a
-            >
+                <use href="./images/icons.svg#icon-smartphone-1"></use></svg>+48 111 111 111</a>
           </li>
         </ul>
-      </div>
-
-      <!-- MENU MOBILNE-->
-
-      <div class="mobile-navigation">
-        <button
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-          class="mobile-navigation__button js-open-menu"
-          type="button"
-        >
-          <svg width="40" height="40">
-            <use href="./images/icons.svg#icon-menu_24px"></use>
+        <!-- MENU MOBILE -->
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          
+          <svg class="hamburger__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-mobile-menu-open"></use>
           </svg>
         </button>
+        <!-- /MENU MOBILE -->
       </div>
+
+      <div class="hamburger js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">        
+          <svg class="hamburger__icon hamburger__icon--close" width="40" height="40">
+            <use href="images/icons.svg#icon-mobile-menu-close"></use>
+          </svg>
+        </button>
+
+        <div class="hamburger__content">
+          <ul class="hamburger__list">
+            <li class="hamburger__item">
+              <a href="index.html" class="hamburger__link">Agencja</a>
+            </li>
+            <li class="hamburger__item">
+              <a href="portfolio.html" class="hamburger__link">Portfolio</a>
+            </li>
+            <li class="hamburger__item">
+              <a href="#" class="hamburger__link">Kontakt</a>
+            </li>
+          </ul>
+          <div class="hamburger__contacts">
+            <span class="hamburger__tel">
+              <a href="tel:+48111111111" class="hamburger__tel hamburger__tel--link">+48 111 111 111</a>
+            </span>
+            <span class="hamburger__mail">
+              <a href="mailto:info@devstudio.com" class="hamburger__mail hamburger__mail--link"
+                >info@devstudio.com</a
+              >
+            </span>
+            <ul class="hamburger__socials">
+              <li class="hamburger__socials hamburger__socials--item">
+                <a class="hamburger__socials hamburger__socials--link" href="#">Instagram</a>
+              </li>
+              <li class="hamburger__socials hamburger__socials--item">
+                <a class="hamburger__socials hamburger__socials--link" href="#">Twitter</a>
+              </li>
+              <li class="hamburger__socials hamburger__socials--item">
+                <a class="hamburger__socials hamburger__socials--link" href="#">Facebook</a>
+              </li>
+              <li class="hamburger__socials hamburger__socials--item">
+                <a class="hamburger__socials hamburger__socials--link" href="#">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
     </header>
 
     <main>
@@ -136,8 +174,7 @@
           </li>
         </ul>
       </section>
-
-      <section class="section what-do">
+      <section class="section section--hide">
         <h2 class="section__title">Czym się zajmujemy</h2>
         <ul class="section__box">
           <li class="project">
@@ -311,63 +348,60 @@
     </main>
 
     <footer class="footer">
-      <div class="container">
-        <div>
-          <a class="logo" href="./"
-            ><span class="logo__web">Web</span><span class="logo__studio-white">Studio</span></a
-          >
-          <address>
-            <ul>
-              <li>
-                <a
-                  class="footer__address"
-                  href="https://goo.gl/maps/4mvbAodd3Mhs6b2KA"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  >m. Warszawa, Aleje Jerozolimskie 21</a
-                >
-              </li>
-              <li>
-                <a class="footer__contact" class="footer" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li>
-                <a class="footer__contact" class="footer" href="tel:+48111111111"
-                  >+48 111 111 111</a
-                >
-              </li>
-            </ul>
-          </address>
-        </div>
-
-        <div>
-          <p class="join-us">DOŁĄCZ DO NAS</p>
-
-          <div class="join-us__container">
-            <a class="join-us__icon"
-              ><svg width="20" height="20" viewBox="0 0 40 40">
-                <use href="./images/icons.svg#icon-instagram-2-1"></use></svg
-            ></a>
-
-            <a class="join-us__icon"
-              ><svg width="20" height="20" viewBox="0 0 40 40">
-                <use href="./images/icons.svg#icon-twitter-1-1"></use></svg
-            ></a>
-
-            <a class="join-us__icon"
-              ><svg width="20" height="20" viewBox="0 0 40 40">
-                <use href="./images/icons.svg#icon-facebook-1-1"></use></svg
-            ></a>
-
-            <a class="join-us__icon"
-              ><svg width="20" height="20" viewBox="0 0 40 40">
-                <use href="./images/icons.svg#icon-linkedin-1-3"></use></svg
-            ></a>
+      <div class="footer__display container">
+        <div class="footer__contacts">
+          <div>
+            <a class="logo" href="./"
+              ><span class="logo__web">Web</span><span class="logo__studio-white">Studio</span></a
+            >
+            <address>
+              <ul>
+                <li>
+                  <a
+                    class="footer__address"
+                    href="https://goo.gl/maps/4mvbAodd3Mhs6b2KA"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >m. Warszawa, Aleje Jerozolimskie 21</a
+                  >
+                </li>
+                <li>
+                  <a class="footer__contact" class="footer" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li>
+                  <a class="footer__contact" class="footer" href="tel:+48111111111"
+                    >+48 111 111 111</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div>
+            <p class="join-us">DOŁĄCZ DO NAS</p>
+            <div class="join-us__container">
+              <a class="join-us__icon"
+                ><svg width="20" height="20" viewBox="0 0 40 40">
+                  <use href="./images/icons.svg#icon-instagram-2-1"></use></svg
+              ></a>
+              <a class="join-us__icon"
+                ><svg width="20" height="20" viewBox="0 0 40 40">
+                  <use href="./images/icons.svg#icon-twitter-1-1"></use></svg
+              ></a>
+              <a class="join-us__icon"
+                ><svg width="20" height="20" viewBox="0 0 40 40">
+                  <use href="./images/icons.svg#icon-facebook-1-1"></use></svg
+              ></a>
+              <a class="join-us__icon"
+                ><svg width="20" height="20" viewBox="0 0 40 40">
+                  <use href="./images/icons.svg#icon-linkedin-1-3"></use></svg
+              ></a>
+            </div>
           </div>
         </div>
 
-        <div>
+        <div class="footer__newsletter">
           <p class="submit">ZAPISZ SIĘ DO NEWSLETTERA</p>
           <form class="submit__form" name="submit-form" novalidate>
             <input class="submit__input" type="email" name="email" placeholder="E-mail" required
@@ -471,6 +505,15 @@
         </form>
       </div>
     </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

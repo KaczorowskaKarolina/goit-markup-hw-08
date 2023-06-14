@@ -8,28 +8,13 @@
   padding: 10px 0px 20px 70px;
   margin: 0px;
 
-      @include tablet {
-
-  }
-
-  @include desktop {
-    
-  }
-
 
 &__container {
   margin-left: 70px;
-  justify-content: space-evenly;
+  // justify-content: space-evenly;
+  justify-content: center;
   gap: 10px;
   display: flex;
-
-      @include tablet {
-
-  }
-
-  @include desktop {
-    
-  }
 }
 
 &__icon {
@@ -40,14 +25,6 @@
   cursor: pointer;
   display: flex;
   transition-property: fill, background-color;
-
-      @include tablet {
-
-  }
-
-  @include desktop {
-    
-  }
 }
 
 &__icon:focus,
@@ -56,13 +33,10 @@
   fill: #ffffff;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-      @include tablet {
-
-  }
-
-  @include desktop {
-    
-  }
 }
+
+
+        @include desktop {
+            margin-top: 12px;
+        }
 }
