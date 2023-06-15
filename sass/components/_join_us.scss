@@ -5,38 +5,59 @@
   font-style: normal;
   font-size: 14px;
   font-weight: 700;
-  padding: 10px 0px 20px 70px;
-  margin: 0px;
+  // padding: 10px 0px 20px 70px;
+  // margin: 0px;
+  margin-top: 60px;
+  margin-bottom: 20px;
 
+  @include tablet {
+    margin-top: 12px;
+    margin-bottom: 20px;
+  }
+  @include desktop {
+    margin-top: 12px;
+    margin-bottom: 20px;
+  }
 
-&__container {
-  margin-left: 70px;
-  // justify-content: space-evenly;
-  justify-content: center;
-  gap: 10px;
-  display: flex;
-}
+  &__box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 
-&__icon {
-  fill: #afb1b8;
-  background-color: #ffffff1a;
-  padding: 14px;
-  border-radius: 50%;
-  cursor: pointer;
-  display: flex;
-  transition-property: fill, background-color;
-}
+  &__container {
+    // margin-left: 70px;
+    // justify-content: center;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+  }
 
-&__icon:focus,
-&__icon:hover {
-  background-color: $highlight-color;
-  fill: #ffffff;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  // &__link {
+  //   display: flex;
+  // 	flex-direction: row;
+  // 	gap: 10px;
+  // }
 
+  &__icon {
+    fill: #afb1b8;
+    background-color: #ffffff1a;
+    padding: 14px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    transition-property: fill, background-color;
+  }
 
-        @include desktop {
-            margin-top: 12px;
-        }
+  &__icon:focus,
+  &__icon:hover {
+    background-color: $highlight-color;
+    fill: #ffffff;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  @include desktop {
+    margin-top: 12px;
+  }
 }

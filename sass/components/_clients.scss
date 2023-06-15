@@ -2,14 +2,11 @@
   gap: 30px 26px;
   display: flex;
   justify-content: center;
-  // align-items: center;
   flex-wrap: wrap;
   margin: 0 auto;
 
   @include desktop {
     gap: 30px;
-    // flex-wrap: nowrap;
-    // flex-basis: auto;
   }
 
   &__logo {
@@ -24,10 +21,11 @@
       padding: 16px 32px;
     }
     &:is(:hover, :focus) {
-      border-color: $highligt-color;
+      border-color: $highlight-color;
     }
+
     & > &-img {
-      fill: var(--icons-fill);
+      fill: $secondary-color;
       transition: fill, border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     &:is(:hover, :focus) > &-img {
