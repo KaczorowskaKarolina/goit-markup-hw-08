@@ -1,31 +1,37 @@
 .clients {
-  gap: 30px;
+  gap: 30px 26px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  // align-items: center;
   flex-wrap: wrap;
+  margin: 0 auto;
 
   @include desktop {
-    flex-wrap: nowrap;
-    flex-basis: auto;
+    gap: 30px;
+    // flex-wrap: nowrap;
+    // flex-basis: auto;
   }
 
-&__icon {
-  border: 1px solid;
-  border-color: #afb1b8;
-  border-radius: 4px;
-  width: 170px;
-  height: 92px;
-  fill: #afb1b8;
-  cursor: pointer;
-  transition-property: fill, border-color;
-}
-
-&__icon:focus,
-&__icon:hover {
-  fill: $highlight-color;
-  border-color: $highlight-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  &__logo {
+    border: 1px solid $secondary-color;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 52px;
+    @include desktop {
+      max-width: 170px;
+      padding: 16px 32px;
+    }
+    &:is(:hover, :focus) {
+      border-color: $highligt-color;
+    }
+    & > &-img {
+      fill: var(--icons-fill);
+      transition: fill, border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &:is(:hover, :focus) > &-img {
+      fill: $highlight-color;
+    }
+  }
 }

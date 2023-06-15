@@ -1,7 +1,14 @@
 .project {
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  list-style-type: none;
+  gap: 30px;
+  // justify-content: center;
+  // margin-left: auto;
+  // margin-right: auto;
+
+  &__item {
+    position: relative;
+  }
 
   &__img-with-title {
     position: relative;

@@ -1,91 +1,91 @@
 .form {
+  width: 450px;
+  height: 609px;
 
+  &__label {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    text-align: left;
+    margin-bottom: 4px;
+    margin-top: 10px;
+  }
 
-&__label {
-  font-family: Roboto;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  text-align: left;
-  margin-bottom: 4px;
-  margin-top: 10px;
+  &__input {
+    position: relative;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    height: 40px;
+    transition-property: fill, border-color;
+  }
+
+  &__input:focus-within,
+  &__textarea:focus-within {
+    border-color: $highlight-color;
+    fill: $highlight-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    transform: translate(10px, -50%);
+  }
+
+  &__textarea &__input {
+    font-family: Roboto;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    border-radius: 4px;
+    color: $highlight-color;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+  }
+
+  &__agreement {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: $secondary-color;
+    margin-bottom: 0px;
+  }
+
+  &__agreement-link {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: $highlight-color;
+  }
+
+  &__button-box {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+
+  &__buttom {
+    position: relative;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    font-family: Roboto;
+    text-align: center;
+    transition-property: color;
+    padding: 10px 76px 10px 76px;
+  }
+
+  &__buttom:focus,
+  &__buttom:hover {
+    color: $secondary-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
-
-&__input {
-  position: relative;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  height: 40px;
-  transition-property: fill, border-color;
-}
-
-&__input:focus-within,
-&__textarea:focus-within {
-  border-color: $highlight-color;
-  fill: $highlight-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-&__icon {
-  position: absolute;
-  top: 50%;
-  transform: translate(10px, -50%);
-}
-
-&__textarea &__input {
-  font-family: Roboto;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  border-radius: 4px;
-  color: $highlight-color;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-}
-
-&__agreement {
-  font-family: Roboto;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  text-align: left;
-  color: $secondary-color;
-  margin-bottom: 0px;
-}
-
-&__agreement-link {
-  font-family: Roboto;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  text-align: left;
-  color: $highlight-color;
-}
-
-&__button-box {
-  display: flex;
-  justify-content: center;
-  margin: 0;
-}
-
-&__buttom {
-  position: relative;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: none;
-  font-family: Roboto;
-  text-align: center;
-  transition-property: color;
-  padding: 10px 76px 10px 76px;
-}
-
-&__buttom:focus,
-&__buttom:hover {
-  color: $secondary-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-}
-

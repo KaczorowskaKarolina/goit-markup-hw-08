@@ -3,70 +3,62 @@ body {
   color: $main-color;
   font-size: 14px;
   text-decoration: none;
-  margin: 0px;
 }
 
 .container {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 15px;
+  min-width: 320px;
+  max-width: 480px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
 
-    @include phone {
-        max-width: 480px;
-    }
+  @include tablet {
+    max-width: 768px;
+  }
 
-    @include tablet {
-        max-width: 768px;
-    }
-
-    @include desktop {
-        max-width: 1200px;
-    }
+  @include desktop {
+    max-width: 1200px;
+  }
 }
 
 .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  &--hide {
+    display: none;
 
     @include desktop {
-      padding-top: 94px;
-      padding-bottom: 94px;
+      display: block;
+      margin-top: -94px;
     }
-
-    &--hide {
-        display: none;
-
-        @include desktop {
-            display: block;
-        }
-    }
+  }
 }
 
 .section__title {
   text-align: center;
   letter-spacing: 0.03em;
-  line-height: 1.16;
+  line-height: 1.78;
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
-  justify-items: center;
+  font-size: 28px;
   margin-bottom: 50px;
-  margin-top: 0px;
-}
+  margin-top: 0;
 
-.section__box {
-  display: flex;
-  gap: 30px;
-
-
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-
-  @include desktop {
-    flex-wrap: nowrap;
+  @include tablet {
+    font-size: 28px;
+    line-height: 1.79;
   }
 
+  @include desktop {
+    font-size: 36px;
+    line-height: 1.67;
+  }
 }
 
 .button {
@@ -93,43 +85,36 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-ul {
-  list-style-type: none;
-  padding: 0px;
-  margin-top: 20px;
-}
+// input {
+//   box-sizing: border-box;
+//   width: 100%;
+//   padding: 12px 1px 12px 42px;
+// }
 
-input {
-  box-sizing: border-box;
-  width: 100%;
-  padding: 12px 1px 12px 42px;
-}
+// input,
+// textarea {
+//   border: none;
+//   outline: none;
+// }
 
-input,
-textarea {
-  border: none;
-  outline: none;
-}
+// input:hover,
+// input:focus,
+// textarea:hover,
+// textarea:focus {
+//   outline: none;
+// }
 
-input:hover,
-input:focus,
-textarea:hover,
-textarea:focus {
-  outline: none;
-}
-
-textarea {
-  font-family: Roboto;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  resize: none;
-  width: 448px;
-  height: 120px;
-  position: relative;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  padding: 12px 16px;
-  box-sizing: border-box;
-}
-
+// textarea {
+//   font-family: Roboto;
+//   font-size: 12px;
+//   line-height: 1.16;
+//   letter-spacing: 0.01em;
+//   resize: none;
+//   width: 448px;
+//   height: 120px;
+//   position: relative;
+//   border: 1px solid rgba(33, 33, 33, 0.2);
+//   border-radius: 4px;
+//   padding: 12px 16px;
+//   box-sizing: border-box;
+// }

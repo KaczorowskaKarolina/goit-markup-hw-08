@@ -1,39 +1,52 @@
 .main_box {
   background-color: #2f303a;
-  background-image: url('../images/img10.jpg'), url('../images/img10overlay.jpg'),
-    linear-gradient(to right, #2f303a 40%, transparent);
+  background-image: url('../images/img10.jpg'), linear-gradient(to right, #2f303a 40%, transparent);
   background-position: center;
-  background-size: cover;
+
   background-repeat: no-repeat;
   color: #ffffff;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 280px;
+
   padding: 118px 0;
-  margin: 0px;
+  @include tablet {
+    padding: 118px 0;
+    background-size: cover;
+  }
 
   @include desktop {
     padding: 200px 0;
-    background-size: auto;
+
+    background-size: cover;
   }
 
   &__title {
+    display: flex;
+    padding: 30px;
+    margin-bottom: 30px;
     letter-spacing: 0.06em;
-    line-height: 42px;
+    line-height: 1.615;
     font-style: normal;
     font-weight: 900;
     font-size: 26px;
 
     text-transform: uppercase;
-    text-align: center;
-    padding: 0px 0px 30px 0px;
+    // text-align: center;
+    @include tablet {
+      font-size: 26px;
+      line-height: 1.615;
+    }
 
     @include desktop {
-      letter-spacing: 0.06em;
-      line-height: 1.36;
-      font-style: normal;
-      font-weight: 900;
+      padding: 0 252px;
       font-size: 44px;
+      line-height: 1.364;
     }
+  }
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .main_box {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/img10@2x.jpg);
   }
 }
