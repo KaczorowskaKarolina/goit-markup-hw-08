@@ -27,11 +27,11 @@
   <body>
     <header class="header">
       <div class="container">
+        <a class="logo" href="./"
+          ><span class="logo__web">Web</span><span class="logo__studio-black">Studio</span></a
+        >
         <div class="header-navigation">
-          <a class="logo" href="./"
-            ><span class="logo__web">Web</span><span class="logo__studio-black">Studio</span></a
-          >
-          <nav>
+          <nav class="menu__nav">
             <ul class="menu">
               <li><a class="menu__link-nav menu__is-on" href="./">Agencja</a></li>
               <li><a class="menu__link-nav" href="./portfolio.html">Portfolio</a></li>
@@ -39,22 +39,19 @@
             </ul>
           </nav>
         </div>
-        <ul class="header-contact">
-          <li>
-            <a class="header-contact__link" href="mailto:info@devstudio.com">
-              <svg class="header-contact__icon-mailto" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope-1"></use></svg
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="header-contact__link" href="tel:+48111111111">
-              <svg class="header-contact__icon-smartphone" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone-1"></use></svg
-              >+48 111 111 111</a
-            >
-          </li>
-        </ul>
+        <div class="header-contact">
+          <a class="header-contact__link" href="mailto:info@devstudio.com">
+            <svg class="header-contact__icon-mailto" width="16" height="12">
+              <use href="./images/icons.svg#icon-envelope-1"></use></svg
+            >info@devstudio.com</a
+          >
+
+          <a class="header-contact__link" href="tel:+48111111111">
+            <svg class="header-contact__icon-smartphone" width="10" height="16">
+              <use href="./images/icons.svg#icon-smartphone-1"></use></svg
+            >+48 111 111 111</a
+          >
+        </div>
         <!-- MENU MOBILE -->
         <div class="burger__mobile-hide">
           <button
