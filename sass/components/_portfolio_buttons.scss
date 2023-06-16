@@ -33,6 +33,7 @@
 
 .filter {
   margin-bottom: -60px;
+  list-style-type: none;
   @include desktop {
     margin-bottom: -94px;
   }
