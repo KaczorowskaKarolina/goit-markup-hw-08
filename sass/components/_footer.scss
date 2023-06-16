@@ -1,7 +1,6 @@
 .footer {
   background-color: #2f303a;
   color: #ffffff;
-  // text-decoration: none;
   padding: 60px 0;
   display: flex;
   text-align: center;
@@ -33,23 +32,10 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
 
-    // margin-top: 20px;
-
     @include desktop {
       gap: 9px;
     }
   }
-  // &__display {
-  //   display: flex;
-  //   flex-direction: column;
-  //   justify-content: center;
-  //   text-align: center;
-
-  //   @include desktop {
-  //     text-align: left;
-  //     flex-direction: row;
-  //   }
-  // }
 
   &__address {
     color: #ffffff;
