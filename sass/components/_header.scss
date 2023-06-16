@@ -28,27 +28,28 @@
 
 .header {
   border-bottom: 1px solid #ececec;
-  padding: 7px 0;
+  padding: 10px 0;
   margin: 0 auto;
 
-  // @include tablet {
-  //   padding: 21px 15px;
-  // }
-  // @include desktop {
-  //   padding: 24px 0 25px;
-  // }
+  @include tablet {
+    padding: 10px 15px;
+  }
+  @include desktop {
+    padding: 24px 0 25px;
+  }
 }
 
 .header-contact {
-  display: flex;
-  flex-direction: column;
+  display: none;
+  // flex-direction: column;
 
   // margin: 0px;
-  // gap: 30px;
+  gap: 30px;
   // list-style: none;
 
   @include tablet {
-    // flex-direction: column;
+    display: flex;
+    flex-direction: column;
     gap: 10px;
   }
   @include desktop {
@@ -67,18 +68,23 @@
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
+    // margin-right: 8px;
 
     // padding: 0px 10px 0px 50px;
     align-items: center;
     gap: 8px;
     transition-property: color;
+
+    & > svg {
+      margin-right: 8px;
+    }
   }
 
-  .header-navigation &__link {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+  // .header-navigation &__link {
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: space-between;
+  // }
 
   &__link:focus,
   &__link:hover {
@@ -96,12 +102,12 @@
 
   &__icon-mailto {
     fill: $secondary-color;
-    padding: 34px 10px 34px 0px;
+    // padding: 34px 10px 34px 0px;
   }
 
   &__icon-smartphone {
     fill: $secondary-color;
-    padding: 33px 10px 31px 0px;
+    // padding: 33px 10px 31px 0px;
   }
 }
 
