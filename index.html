@@ -74,44 +74,44 @@
           </svg>
         </button>
 
-        <div class="hamburger__content">
-          <ul class="hamburger__list">
-            <li class="hamburger__item">
-              <a href="index.html" class="hamburger__link">Agencja</a>
+        <ul class="hamburger__list">
+          <li class="hamburger__item">
+            <a href="index.html" class="hamburger__link">Agencja</a>
+          </li>
+          <li class="hamburger__item">
+            <a href="portfolio.html" class="hamburger__link">Portfolio</a>
+          </li>
+          <li class="hamburger__item">
+            <a href="#" class="hamburger__link">Kontakt</a>
+          </li>
+        </ul>
+
+        <div class="hamburger__contacts">
+          <span class="hamburger__tel">
+            <a href="tel:+48111111111" class="hamburger__tel hamburger__tel--link"
+              >+48 111 111 111</a
+            >
+          </span>
+          <span class="hamburger__mail">
+            <a href="mailto:info@devstudio.com" class="hamburger__mail hamburger__mail--link"
+              >info@devstudio.com</a
+            >
+          </span>
+
+          <ul class="hamburger__socials">
+            <li class="hamburger__socials hamburger__socials--item">
+              <a class="hamburger__socials hamburger__socials--link" href="#">Instagram</a>
             </li>
-            <li class="hamburger__item">
-              <a href="portfolio.html" class="hamburger__link">Portfolio</a>
+            <li class="hamburger__socials hamburger__socials--item">
+              <a class="hamburger__socials hamburger__socials--link" href="#">Twitter</a>
             </li>
-            <li class="hamburger__item">
-              <a href="#" class="hamburger__link">Kontakt</a>
+            <li class="hamburger__socials hamburger__socials--item">
+              <a class="hamburger__socials hamburger__socials--link" href="#">Facebook</a>
+            </li>
+            <li class="hamburger__socials hamburger__socials--item">
+              <a class="hamburger__socials hamburger__socials--link" href="#">LinkedIn</a>
             </li>
           </ul>
-          <div class="hamburger__contacts">
-            <span class="hamburger__tel">
-              <a href="tel:+48111111111" class="hamburger__tel hamburger__tel--link"
-                >+48 111 111 111</a
-              >
-            </span>
-            <span class="hamburger__mail">
-              <a href="mailto:info@devstudio.com" class="hamburger__mail hamburger__mail--link"
-                >info@devstudio.com</a
-              >
-            </span>
-            <ul class="hamburger__socials">
-              <li class="hamburger__socials hamburger__socials--item">
-                <a class="hamburger__socials hamburger__socials--link" href="#">Instagram</a>
-              </li>
-              <li class="hamburger__socials hamburger__socials--item">
-                <a class="hamburger__socials hamburger__socials--link" href="#">Twitter</a>
-              </li>
-              <li class="hamburger__socials hamburger__socials--item">
-                <a class="hamburger__socials hamburger__socials--link" href="#">Facebook</a>
-              </li>
-              <li class="hamburger__socials hamburger__socials--item">
-                <a class="hamburger__socials hamburger__socials--link" href="#">LinkedIn</a>
-              </li>
-            </ul>
-          </div>
         </div>
       </div>
     </header>
@@ -515,10 +515,9 @@
           </ul>
         </div>
 
-        <div class="footer__newsletter">
+        <form class="submit__form" name="submit-form" novalidate>
           <p class="submit">ZAPISZ SIĘ DO NEWSLETTERA</p>
-
-          <form class="submit__form" name="submit-form" novalidate>
+          <div class="submit__wrapper">
             <input class="submit__input" type="email" name="email" placeholder="E-mail" required
             pattern="[a-z0-9._%+-]+@[pa-z0-9.-]+\.[a-z]{2-4}$"" />
             <button class="submit__button" type="sumbit">
@@ -526,8 +525,8 @@
                 <use href="./images/icons.svg#icon-icon-send-1"></use>
               </svg>
             </button>
-          </form>
-        </div>
+          </div>
+        </form>
       </div>
     </footer>
 

@@ -144,7 +144,8 @@
     cursor: pointer;
 
     &:hover {
-      background-color: blue; /* Kolor tła po najechaniu myszką */
+      // background-color: transparent;
+      fill: $highlight-color; /* Kolor tła po najechaniu myszką */
     }
 
     & ~ svg:hover {

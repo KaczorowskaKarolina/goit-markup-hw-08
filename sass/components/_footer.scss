@@ -2,7 +2,7 @@
   background-color: #2f303a;
   color: #ffffff;
   // text-decoration: none;
-  // padding: 60px 0;
+  padding: 60px 0;
   display: flex;
   text-align: center;
   justify-content: space-between;
@@ -32,7 +32,7 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    
+
     // margin-top: 20px;
 
     @include desktop {
@@ -70,7 +70,6 @@
     letter-spacing: 0.03em;
     line-height: 1.71;
     text-decoration: none;
-    
   }
 
   &__address:hover,
@@ -80,36 +79,6 @@
     color: $highlight-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  // &__contacts {
-  //   display: flex;
-  //   flex-direction: column;
-  //   justify-content: space-around;
-
-  //   @include tablet {
-  //     flex-direction: row;
-  //   }
-
-  //   @include desktop {
-  //     flex-direction: row;
-  //   }
-  // }
-
-  &__newsletter {
-    // margin-top: 60px;
-    flex-grow: 1;
-    
-
-    @include tablet {
-      margin-top: -60px;
-      gap: 20px;
-    }
-
-    @include desktop {
-      margin-top: 12px;
-      // margin-left: 78px;
-    }
   }
 }
 
