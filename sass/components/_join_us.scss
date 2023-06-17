@@ -37,6 +37,9 @@
     cursor: pointer;
     display: flex;
     transition-property: fill, background-color;
+    &--footer {
+      fill: #ffffff;
+    }
   }
 
   &__icon:focus,

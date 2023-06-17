@@ -14,6 +14,10 @@
   }
 }
 
+// .menu__mobile-is-on:activ {
+//   color: $highlight-color;
+// }
+
 .hamburger {
   display: flex;
   flex-direction: column;
@@ -77,6 +81,9 @@
     font-size: 40px;
     text-decoration: none;
     color: #212121;
+    &--is-active {
+      color: $highlight-color;
+    }
   }
 
   &__link:hover {
@@ -113,7 +120,7 @@
     font-size: 24px;
     line-height: 28px;
     letter-spacing: 0.02em;
-    color: silver;
+    color: #757575;
     text-decoration: none;
   }
 

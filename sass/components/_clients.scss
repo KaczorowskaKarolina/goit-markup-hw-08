@@ -10,7 +10,7 @@
   }
 
   &__logo {
-    border: 1px solid $secondary-color;
+    border: 1px solid #afb1b8;
     border-radius: 4px;
     display: flex;
     justify-content: center;
@@ -25,7 +25,7 @@
     }
 
     & > &-img {
-      fill: $secondary-color;
+      fill: #afb1b8;
       transition: fill, border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     &:is(:hover, :focus) > &-img {
